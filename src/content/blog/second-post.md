@@ -1,7 +1,7 @@
 ---
 title: 'My Second Post'
 pubDate: 'Jul 01 2022'
-heroImage: "https://generated.vusercontent.net/placeholder.svg"
+heroImage: "/assets/img1.png"
 tags: 
   - Java
   - Astro

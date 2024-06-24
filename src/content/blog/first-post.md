@@ -1,7 +1,7 @@
 ---
 title: 'My First Post'
 pubDate: 'Jul 08 2022'
-heroImage: "https://generated.vusercontent.net/placeholder.svg"
+heroImage: "/assets/img1.png"
 tags: 
   - AI
   - Dev
