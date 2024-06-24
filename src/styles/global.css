@@ -1,0 +1,39 @@
+@font-face {
+font-family: 'DistantGalaxy';
+src: url('/fonts/ProductSans-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+font-family: 'DistantGalaxy';
+src: url('/fonts/ProductSans-Regular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+font-family: 'DistantGalaxy';
+src: url('/fonts/ProductSans-Medium.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+font-family: 'DistantGalaxy';
+src: url('/fonts/ProductSans-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+font-family: 'DistantGalaxy';
+src: url('/fonts/ProductSans-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+font-display: swap;
+}
+
+h1 {
+    font-family: "ProductSans";
+}

@@ -1,0 +1,28 @@
+---
+import "@/styles/global.css";
+interface Props { title: string; }
+const { title } = Astro.props;
+---
+
+<head>
+    <!-- Global metadata -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <!-- Preloads for fonts -->
+    <link rel="preload" href="/fonts/ProductSans-Bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-BlackItalic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-Black.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-BoldItalic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-Italic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-LightItalic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-Medium.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-Light.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-MediumItalic.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-Thin.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/ProductSans-ThinItalic.ttf" as="font" type="font/ttf" crossorigin />
+    
+    <title>{title}</title>
+</head>
