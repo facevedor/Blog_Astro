@@ -1,23 +1,27 @@
 ---
 import BlogPost from "@/layouts/BlogPost.astro";
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
+import { getCollection, getEntryBySlug } from "astro:content";
+export const prerender = true;
+
 export const getStaticPaths = (async () => {
-    const post = await getCollection("blog");
-    return post.map((post) =>({params: {slug: post.slug }, props : post}));
+    const posts = await getCollection("blog");
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: post,
+    }));
 }) satisfies GetStaticPaths;
 
-const post = Astro.props;
-const {Content} = await  post.render();
+const { slug } = Astro.params;
+const post = await getEntryBySlug('blog', slug );
+
+if (!post) {
+    throw new Error(`Post not found for slug: ${slug}`);
+}
+
+const { Content } = await post.render();
 ---
 
 <BlogPost {...post.data}>
-
-    <Content/>
-
-   
-    
-
+    <Content />
 </BlogPost>
-
-

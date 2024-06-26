@@ -1,23 +1,14 @@
 ---
-title: 'My First Post'
-pubDate: 'Jul 08 2022'
+title: 'My Second Post'
+pubDate: 'Jul 01 2022'
 heroImage: "/assets/img1.png"
 tags: 
-  - AI
-  - Dev
+  - Java
+  - Astro
 description: 'This is a brief description of my first post.'
 ---
 
 # Titulo principal
-jbdejhbhsajvbjhsavcas
-saca
-s
-cas
-csa
-cas
-csa
-ca
-c
 
 lorem lorem lorem lorem
 lorem lorem

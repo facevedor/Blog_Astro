@@ -4,6 +4,7 @@ import { getAllTags } from "@/utils/getAllTags";
 import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Article from "@/components/Article.astro";
+export const prerender = true;
 export const getStaticPaths = (async () => {
     const tags =( await getAllTags()).map(tag => tag.toLowerCase());
     
