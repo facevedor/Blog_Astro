@@ -2,12 +2,16 @@
 import BaseHead from "@/components/BaseHead.astro" ;
 interface Props { title: string;}
 const {title} = Astro.props;
+import Nav from "@/components/Nav.astro";
 ---
 <!DOCTYPE html>
 <html lang="es">
     <BaseHead title={title}/>
     <body class="bg-dark-blue"> 
         <div>
+            <Nav>
+                
+            </Nav>
             <main>
                 <slot/>
             </main>

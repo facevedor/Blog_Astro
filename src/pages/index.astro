@@ -1,23 +1,13 @@
 ---
 import MainLayout from "@/layouts/MainLayout.astro";
-import {SignIn,SignOut} from "auth-astro/components"
-import {getSession} from "auth-astro/server";
-const session = await getSession(Astro.request)
+
 ---
 
 <MainLayout title="Home">
-	<h1>Home</h1>
-	{
-		session ?
-		<>
-		<p> hola {session.user?.email}</p>
-		<SignOut> Cerrar Sesion </SignOut>
-		</>
-		: 
-		<></body>>
-	}
 	
-	<SignIn >Login</SignIn>
+	 <section> 
+		
+	 </section>
 	
 </MainLayout>
 
