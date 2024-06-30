@@ -4,7 +4,7 @@ import {getSession} from "auth-astro/server";
 const session = await getSession(Astro.request)
 ---
 
-<nav class={`w-full flex ${session ? "justify-between px-14":"justify-end pr-14"}  p-2  bg-slate-400`}> 
+<nav class={`w-full flex ${session ? "justify-between px-14":"justify-end pr-14"}  p-2  bg-black`}> 
  
     <h3 class="text-white font-medium">
         {session?.user?.email}
@@ -13,7 +13,7 @@ const session = await getSession(Astro.request)
         <a href="/">Inicio</a>
         {
             session ?
-            <a href="/blog">BLog</a>
+            <a href="/blog">Recetario</a>
             <SignOut> Cerrar Sesion </SignOut>
             : 
             <SignIn >Login</SignIn>

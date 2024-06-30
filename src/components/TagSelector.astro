@@ -2,9 +2,10 @@
 import { getAllTags } from "@/utils/getAllTags";
 const tags = await getAllTags()
 import {Icon} from "astro-icon/components";
+
 ---
 
-<div class="flex gap-3">
+<div class="flex gap-3 mt-10">
     
     <span
     id="opener"
@@ -30,9 +31,11 @@ import {Icon} from "astro-icon/components";
 
 </div>
 <script data-astro-rerun>
+
     document.getElementById("opener")?.addEventListener('click',() => {
      const selector =  document.getElementById("selector");  
      selector?.classList.toggle("opacity-0");
+     
 
     })
 </script>
