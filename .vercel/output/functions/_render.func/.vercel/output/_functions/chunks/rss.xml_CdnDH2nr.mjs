@@ -1,7 +1,8 @@
-src/pages/rss.xml.js
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
-export async function GET(context) {
+import { g as getCollection } from './_astro_content_B7Ui1quC.mjs';
+
+src/pages/rss.xml.js;
+async function GET(context) {
 
   const posts = await getCollection('blog');
   return rss({
@@ -20,3 +21,5 @@ export async function GET(context) {
     )) 
   });
 }
+
+export { GET };
